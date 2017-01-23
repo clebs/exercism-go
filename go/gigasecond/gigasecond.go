@@ -7,7 +7,7 @@ const testVersion = 4
 
 const gigaSecond = time.Second * 1e9
 
-// API function.  It uses a type from the Go standard library.
+// AddGigasecond adds a gigasecond to t and returns a copy of it.
 func AddGigasecond(t time.Time) time.Time {
 	return t.Add(gigaSecond)
 }
