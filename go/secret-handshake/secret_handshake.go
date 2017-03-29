@@ -22,7 +22,7 @@ func Handshake(code uint) []string {
 		}
 	}
 
-	if code&16 == 16 {
+	if code&reverse == reverse {
 		for i, j := 0, len(secret)-1; i < j; i, j = i+1, j-1 {
 			secret[i], secret[j] = secret[j], secret[i]
 		}
