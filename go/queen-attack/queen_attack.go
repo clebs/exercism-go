@@ -7,6 +7,7 @@ import (
 
 const testVersion = 2
 
+// CanQueenAttack tells if 2 chess queens can attack each other or not based on their position.
 func CanQueenAttack(w, b string) (bool, error) {
 	if w == b {
 		return false, fmt.Errorf("Both quens at the same position %s, only possible in quantum physics", w)
