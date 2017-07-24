@@ -14,10 +14,8 @@ func Valid(l string) bool {
 		return false
 	}
 
-	rs := []rune(l)
 	sum := 0
-
-	for i, r := range rs {
+	for i, r := range []rune(l) {
 		if !unicode.IsDigit(r) {
 			return false
 		}
